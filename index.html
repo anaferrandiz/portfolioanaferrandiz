@@ -1,0 +1,353 @@
+<!-- 
+Este HTML contiene la página principal del sitio web.
+Estructura:
+- Encabezado
+- Barra de navegación
+- Contenido principal 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Ferràndiz</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body__index">
+    <!-- **************** INICIO HEADER **************** -->
+
+    <header class="header">
+        <h1 class="header__h1">
+            <a href="index.html" title="projectes" target="_self">ana ferràndiz</a>
+        </h1>
+        <button class="header__btn">&#9776;</button>
+
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="index.html" title="projectes" target="_self">projectes</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="sobremi.html" title="Sobre mi" target="_self">sobre mi</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="contacte.html" title="Contacte" target="_self">contacte</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- **************** FIN HEADER **************** -->
+
+    <!-- **************** INICIO MAIN **************** -->
+
+    <main class="main">
+
+        <a href="#arrow" class="main__arrow">
+            <img src="assets/arrow.png" alt="Flecha">
+        </a>
+
+        <div class="wrapper__principal">
+
+            <div class="principal__imagenes">
+
+                <div id="arrow" class="principal__img">
+
+                    <picture>
+                        <source srcset="assets/main_senegal_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_senegal_copia.webp" alt="Imagen" class="imgs imgsenegal" loading="lazy">
+                        <figcaption>Senegal</figcaption>
+                    </picture>
+
+
+                    <div class="wrapper__hov senegal">
+                        <p class="principal__img__date">2019</p>
+
+                        <a href="senegal.html" target="_self">
+                            <h2 class="principal__img__h2">Senegal</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Senegal</h3>
+                    </div>
+
+                </div>
+
+                <div class="principal__img">
+
+
+                    <picture>
+                        <source srcset="assets/main_black_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_black_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Black on bikes</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov black">
+                        <p class="principal__img__date">2018</p>
+
+                        <a href="blackonbikes.html" target="_self">
+                            <h2 class="principal__img__h2">black on bikes</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">València</h3>
+                    </div>
+
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_covers_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_covers_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Covers</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov covers">
+                        <p class="principal__img__date">2022</p>
+
+                        <a href="covers.html" target="_self">
+                            <h2 class="principal__img__h2">covers</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Egipte</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_egipt_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_egipt_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Egipto</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov egipt">
+                        <p class="principal__img__date">2022</p>
+
+                        <a href="egipte.html" target="_self">
+                            <h2 class="principal__img__h2">egipte</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Egipte</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+
+                    <picture>
+                        <source srcset="assets/main_esclata_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_esclata_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Esclata-sang</figcaption>
+                    </picture>
+
+
+                    <div class="wrapper__hov esclata">
+                        <p class="principal__img__date">2023</p>
+
+                        <a href="esclatasang.html" target="_self">
+                            <h2 class="principal__img__h2 esclatah2">esclata-sang</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Muro d'Alcoi</h3>
+                    </div>
+
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_india_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_india_copia.webp" alt="Imagen" class="imgs imgindia" loading="lazy">
+                        <figcaption>India</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov india">
+                        <p class="principal__img__date">2016</p>
+
+                        <a href="india.html" target="_self">
+                            <h2 class="principal__img__h2">india</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">India</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+
+                    <picture>
+                        <source srcset="assets/main_flors_3_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_flors_3_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Flors</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov flors">
+                        <p class="principal__img__date">2024</p>
+
+                        <a href="flors.html" target="_self">
+                            <h2 class="principal__img__h2">flors</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">València</h3>
+                    </div>
+
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_iyana_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_iyana_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Empuja</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov empuja">
+                        <p class="principal__img__date">2023</p>
+
+                        <a href="empuja.html" target="_self">
+                            <h2 class="principal__img__h2">empuja</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">València</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_muro_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_muro_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Muro de Alcoy</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov muro">
+                        <p class="principal__img__date">2022-2023</p>
+
+                        <a href="festesmuro.html" target="_self">
+                            <h2 class="principal__img__h2">festes muro</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Muro d'Alcoi</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_plamienok_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_plamienok_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Plamienok</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov plamienok">
+                        <p class="principal__img__date">2020</p>
+
+                        <a href="plamienok.html" target="_self">
+                            <h2 class="principal__img__h2">Plamienok</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Eslovàquia</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_vina_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_vina_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Viña Rock</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov vinarock">
+                        <p class="principal__img__date">2023</p>
+
+                        <a href="vinarock.html" target="_self">
+                            <h2 class="principal__img__h2">Viña rock</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Villarrobledo</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img sahara">
+                    <picture>
+                        <img src="assets/main_sahara_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Sáhara</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov sahara">
+                        <p class="principal__img__date">2020</p>
+
+                        <a href="sahara.html" target="_self">
+                            <h2 class="principal__img__h2">Saharaui</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">Tinduf, Argèlia</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_ayoub_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_ayoub_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Reels</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov ayoub">
+                        <p class="principal__img__date">2022-2024</p>
+                        <h2 class="principal__img__h2">...</h2>
+                        <h3 class="principal__img__h3">...</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_moussa_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_moussa_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Moussa Seydi</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov moussa">
+                        <p class="principal__img__date">2022</p>
+
+                        <a href="moussa.html" target="_self">
+                            <h2 class="principal__img__h2">Moussa</h2>
+                        </a>
+
+                        <h3 class="principal__img__h3">València</h3>
+                    </div>
+                </div>
+
+                <div class="principal__img">
+                    <picture>
+                        <source srcset="assets/main_origen_copia_s.webp" media="(max-width:1000px)">
+                        <img src="assets/main_origen_copia.webp" alt="Imagen" class="imgs" loading="lazy">
+                        <figcaption>Origen</figcaption>
+                    </picture>
+
+                    <div class="wrapper__hov origen">
+                        <p class="principal__img__date">2020</p>
+
+                        <a href="origen.html" target="_self">
+                            <h2 class="principal__img__h2">Origen</h2>
+                        </a>
+                        
+                        <h3 class="principal__img__h3">València</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

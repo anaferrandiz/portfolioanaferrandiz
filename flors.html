@@ -1,0 +1,160 @@
+<!-- 
+Este HTML contiene la página del proyecto "FLORS".
+Estructura:
+- Encabezado
+- Barra de navegación
+- Contenido principal 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Ferràndiz</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/flors.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body__flors">
+    <!-- **************** INICIO HEADER **************** -->
+
+    <header class="header">
+        <h1 class="header__h1">
+            <a href="index.html" title="projectes" target="_self">ana ferràndiz</a>
+        </h1>
+        <button class="header__btn">&#9776;</button>
+
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="index.html" title="projectes" target="_self">projectes</a>
+                </li>
+                <li class="nav__li">
+                    <a href="sobremi.html" title="Sobre mi" target="_self">sobre mi</a>
+                </li>
+                <li class="nav__li">
+                    <a href="contacte.html" title="Contacte" target="_self">contacte</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- **************** FIN HEADER **************** -->
+
+    <!-- **************** INICIO PROYECTO FLORS **************** -->
+
+    <main class="main__flors">
+
+        <div class="wrapper__img__flors">
+
+        </div>
+
+        <div class="wrapper__flors">
+            <div class="contenedor__flors">
+                <p class="text__flors">projecte en construcció</p>
+                <p class="text__flors">proyecto en construcción</p>
+                <p class="text__flors">project under construction</p>
+            </div>
+        </div>
+
+
+        <div class="wrapper__main__flors">
+            <div class="wrapper__contenido__flors">
+                 
+                <div class="wrap__cadaflor">
+                    <p class="p__flors valflors">menys asfalt, més flors</p>
+                    <p class="p__flors castflors">menos asfalto, más flores</p>
+                    <p class="p__flors engflors">less asphalt, more flowers</p>
+                </div>
+
+                <div class="wrap__cadaflor">
+                    <p class="p__flors valflors">menys fem, més flors</p>
+                    <p class="p__flors castflors">menos basura, más flores</p>
+                    <p class="p__flors engflors">less trash, more flowers</p>
+                </div>
+
+                <div class="wrap__cadaflor">
+                    <p class="p__flors valflors">menys nuclears, més flors</p>
+                    <p class="p__flors castflors">menos nucleares, más flores</p>
+                    <p class="p__flors engflors">fewer nuclear, more flowers</p>
+                </div>
+
+
+                <div class="wrap__cadaflor">
+                    <p class="p__flors valflors">menys armes, més flors</p>
+                    <p class="p__flors castflors">menos armas, más flores</p>
+                    <p class="p__flors engflors">less weapons, more flowers</p>
+                </div>    
+
+            </div>
+
+        </div>
+<!-- ************ INICIO IMÁGENES, se activan con JavaScript ************ -->
+
+        <div class="contenedor__imgs__flors">
+
+            <div class="wrapper__imgs__flors">
+
+                <div class="imgs__flors imgs__flors--a">
+                    <picture>
+                        <source srcset="assets/flors/flors_02_s.webp" media="(max-width:1000px)">
+                        <img src="assets/flors/flors_02.webp" alt="Imagen Flors" loading="lazy">
+                        <figcaption>Flors</figcaption>
+                    </picture>                  
+                </div>
+
+                <div class="imgs__flors imgs__flors--b">
+
+                    <picture>
+                        <source srcset="assets/flors/flors_01_s.webp" media="(max-width:1000px)">
+                        <img src="assets/flors/flors_01.webp" alt="Imagen Flors" loading="lazy">
+                        <figcaption>Flors</figcaption>
+                    </picture> 
+                </div>
+
+                <div class="imgs__flors imgs__flors--c">
+                    <picture>
+                        <source srcset="assets/flors/flors_03_s.webp" media="(max-width:1000px)">
+                        <img src="assets/flors/flors_03.webp" alt="Imagen Flors" loading="lazy">
+                        <figcaption>Flors</figcaption>
+                    </picture> 
+                </div>
+
+                <div class="imgs__flors imgs__flors--d">
+                    <picture>
+                        <source srcset="assets/flors/flors_04_s.webp" media="(max-width:1000px)">
+                        <img src="assets/flors/flors_04.webp" alt="Imagen Flors" loading="lazy">
+                        <figcaption>Flors</figcaption>
+                    </picture> 
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- ************ FIN IMÁGENES ************ -->
+
+        
+        <p class="p__siguiente florssiguiente">
+            <a href="empuja.html" title="Siguiente proyecto" target="_self"
+                class="siguiente__proyecto">Següent
+                projecte &#10142;</a>
+        </p>
+
+        
+
+    </main>
+</body>
+
+</html>

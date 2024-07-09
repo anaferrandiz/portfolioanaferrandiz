@@ -1,0 +1,112 @@
+<!-- 
+Este HTML contiene la página del apartado SOBRE MI.
+Estructura:
+- Encabezado
+- Barra de navegación
+- Contenido  
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Ferràndiz</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body__index">
+    <!-- **************** INICIO HEADER **************** -->
+
+    <header class="header">
+        <h1 class="header__h1">
+            <a href="index.html" title="projectes" target="_self">ana ferràndiz</a>
+        </h1>
+        <button class="header__btn">&#9776;</button>
+
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a href="index.html" title="projectes" target="_self">projectes</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="sobremi.html" title="Sobre mi" target="_self">sobre mi</a>
+                </li>
+
+                <li class="nav__li">
+                    <a href="contacte.html" title="Contacte" target="_self">contacte</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- **************** FIN HEADER **************** -->
+
+    <!-- **************** INICIO MAIN **************** -->
+
+    <main class="main__sobremi">
+
+        <section class="wrapper__sobremi">
+          
+            <div class="contenedor__sobremi__img">
+                <picture>
+                    <source srcset="assets/sobremi_img_s.webp" media="(max-width:1000px)">
+                    <img src="assets/sobremi_img.webp" alt="Imagen" title="Imagen" class="imgsobremi">
+                </picture>            
+            </div>
+
+            <div class="contenedor__sobremi__p">
+                <h3 class="h3__sobremi">sobre mi</h3>
+               
+                <!-- ************ INICIO TABS SOBREMI ************ -->
+             
+                <div class="tabs__proyectos">
+
+                    <ul class="tabs__proyectos__ul">
+                        <li class="tabs__proyectos__li">
+                            <button class="tabs__proyectos__btn tabs-sobremi isActive">VAL</button>
+                        </li>
+
+                        <li class="tabs__proyectos__li">
+                            <button class="tabs__proyectos__btn tabs-sobremi">CAST</button>
+                        </li>
+
+                        <li class="tabs__proyectos__li">
+                            <button class="tabs__proyectos__btn tabs-sobremi">ENG</button>
+                        </li>
+                    </ul>
+
+                    <div class="tabs__proyectos__wrapper">
+                        <p class="tabs__proyectos__p  isActive">
+                            Sóc una apassionada de les històries humanes. M'emociona viatjar i documentar aspectes de la vida de qualsevol racó del món per crear consciència social i trencar amb estructures creades des del colonialisme.
+                        </p>
+                        <p class="tabs__proyectos__p">
+                            Soy una apasionada de las historias humanas. Me emociona viajar y documentar aspectos de la vida de cualquier rincón del mundo para crear conciencia social y romper con estructuras creadas desde el colonialismo.
+                        </p>
+                        <p class="tabs__proyectos__p">
+                            I am passionate about human stories. I am excited to travel and document aspects of life in any corner of the world to raise social awareness and break with structures created by colonialism.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- ************ FIN TABS SOBREMI ************ -->
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
