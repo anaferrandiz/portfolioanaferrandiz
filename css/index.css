@@ -1648,6 +1648,10 @@ figcaption {
         margin-left: 0;
     }
 
+    .height__covers{
+        padding-top: 3.2rem;
+    }
+
     .tabs__proyectos {
         width: 70%;
         margin-bottom: 0;
