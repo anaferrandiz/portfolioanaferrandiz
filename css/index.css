@@ -823,6 +823,10 @@ figcaption {
     border-radius: 1.25rem;
 }
 
+.carrusel__esclata__btn.isActive {
+    background-color: rgba(253, 247, 247, 0.798);
+}
+
 /* FIN CARRUSEL */
 
 
