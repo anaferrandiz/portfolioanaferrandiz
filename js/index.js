@@ -34,7 +34,6 @@ tabsBtns.forEach(function (eachBtn, index) {
 
 
 
-
 // ************* CARRUSEL ESCLATA-SANG
 
 let positione = 0
@@ -45,9 +44,15 @@ const carrouselBtns = document.querySelectorAll('.carrusel__esclata__btn')
 let carrouselContainer = document.querySelector('.wrapper__carrusel__esclata')
 
 const desplazarContainer = function() {
-    carrouselContainer.style.transform = `translateX(-${positione * (100 / 6)}%)`
+    carrouselContainer.style.transform = `translateX(-${positione * (100 / 6)}%)`;
+    actualizarBotones();
 }
 
+const actualizarBotones = function() {
+    carrouselBtns.forEach(function(btn, index) {
+        btn.classList.toggle('isActive', index === positione);
+    });
+}
 
 siguientearrow.addEventListener('click', function (){
     positione++
@@ -60,7 +65,7 @@ siguientearrow.addEventListener('click', function (){
 anteriorarrow.addEventListener('click', function () {
     positione--
     if (positione < 0) {
-        posicione = 2
+        positione = 2
     }
 
     desplazarContainer()
@@ -85,6 +90,8 @@ setInterval(function(){
 } , 3000)
 // Que se ejecute cada 3000 milisegundos 
 
+
+actualizarBotones();
 // ************* FIN CARRUSEL ESCLATA-SANG
 
 
