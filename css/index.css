@@ -717,6 +717,11 @@ figcaption {
     color: black;
 }
 
+.tabs__p__covers {
+    font-size: .9em;
+    padding: 0 0;
+}
+
 @media (max-width:1100px) {
     .tabs__p__covers {
         font-size: .9em;
@@ -818,7 +823,7 @@ figcaption {
 
 .carrusel__esclata__btn {
     width: 1rem;
-    height: 0.7rem;
+    height: 1rem;
     background-color: rgba(0, 0, 0, 0.27);
     border-radius: 1.25rem;
 }
@@ -1486,6 +1491,9 @@ figcaption {
     text-align: center;
 }
 
+
+
+
 @media (max-width: 700px) {
     .piefoto__origen {
         font-size: 1.7vw;
@@ -1493,6 +1501,16 @@ figcaption {
 
     .p__origen__final {
         font-size: 8vw;
+    }
+}
+
+@media (min-width:1000px){
+    .origen__padding{
+        padding: 0;
+    }
+
+    .datos__origen{
+        padding: 0 2rem;
     }
 }
 
@@ -1652,10 +1670,10 @@ figcaption {
         margin-left: 0;
     }
 
-    .height__covers{
-        padding-top: 3.2rem;
-    }
-
+.height__covers{
+    padding-top: 3.2rem;
+}
+    
     .tabs__proyectos {
         width: 70%;
         margin-bottom: 0;
