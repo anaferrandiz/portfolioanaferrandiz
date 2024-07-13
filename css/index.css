@@ -68,11 +68,16 @@ body {
 
 /**************** INICIO HEADER ****************/
 :root {
-    --color-taronja: #f08860; /* Color hover header  */
-    --color-blau-clar: #7198e5; /* Color selection  */
-    --font-family-titular: "Lato", sans-serif; /* Tipgrafía titular  */
-    --font-weight-titular: 400; /* Weight titular  */
-    --font-weight-main: 900; /* Weight main  */
+    --color-taronja: #f08860;
+    /* Color hover header  */
+    --color-blau-clar: #7198e5;
+    /* Color selection  */
+    --font-family-titular: "Lato", sans-serif;
+    /* Tipgrafía titular  */
+    --font-weight-titular: 400;
+    /* Weight titular  */
+    --font-weight-main: 900;
+    /* Weight main  */
 }
 
 figcaption {
@@ -211,10 +216,9 @@ figcaption {
     /* z-index: 1; */
 }
 
-.img__proyectos{
+.img__proyectos {
     width: 100%;
 }
-
 
 .wrapper__hov {
     position: absolute;
@@ -352,7 +356,7 @@ figcaption {
 
 
 .wrapper__sobremi {
-    width: 50%;
+    width: 55%;
     /* background-color: salmon; */
     margin: 13rem auto;
 
@@ -363,7 +367,7 @@ figcaption {
 }
 
 .contenedor__sobremi__img {
-    width: 70%;
+    width: 100%;
     /* background-color: #7198e5; */
 }
 
@@ -1489,7 +1493,7 @@ figcaption {
 }
 
 .p__origen__final {
-    color:  #336765;
+    color: #336765;
     margin-top: 10rem;
     font-size: 3vw;
     text-align: center;
@@ -1508,12 +1512,12 @@ figcaption {
     }
 }
 
-@media (min-width:1000px){
-    .origen__padding{
+@media (min-width:1000px) {
+    .origen__padding {
         padding: 0;
     }
 
-    .datos__origen{
+    .datos__origen {
         padding: 0 2rem;
     }
 }
@@ -1607,10 +1611,10 @@ figcaption {
 }
 
 @media (min-width: 1001px) and (max-width: 1600px) {
-    .wrapper__sobremi {
-        width: 70%;
+    /* .wrapper__sobremi {
+        width: 60%;
         margin: 8rem auto;
-    }
+    } */
 
     .india {
         background-color: #9bbaba;
@@ -1674,10 +1678,34 @@ figcaption {
         margin-left: 0;
     }
 
-.height__covers{
-    padding-top: 3.2rem;
-}
-    
+
+    .wrapper__sobremi {
+        width: 100%;
+        margin: 6rem auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contenedor__sobremi__p {
+        width: 80%;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .contenedor__sobremi__img {
+        width: 50%;
+        /* background-color: #7198e5; */
+    }
+
+    .h3__sobremi {
+        font-size: 8vw;
+    }
+
+    .height__covers {
+        padding-top: 3.2rem;
+    }
+
     .tabs__proyectos {
         width: 70%;
         margin-bottom: 0;
@@ -1780,8 +1808,14 @@ figcaption {
     }
 
     .contenedor__sobremi__p {
+        width: 80%;
         align-items: center;
         padding-left: 0;
+    }
+
+    .contenedor__sobremi__img {
+        width: 50%;
+        /* background-color: #7198e5; */
     }
 
     .h3__sobremi {
@@ -1831,6 +1865,29 @@ figcaption {
 
 
 @media (max-width: 700px) {
+
+    .wrapper__sobremi {
+        width: 100%;
+        margin: 6rem auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contenedor__sobremi__p {
+        width: 90%;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .contenedor__sobremi__img {
+        width: 50%;
+        /* background-color: #7198e5; */
+    }
+
+    .h3__sobremi {
+        font-size: 8vw;
+    }
 
     .header {
         width: 100%;
