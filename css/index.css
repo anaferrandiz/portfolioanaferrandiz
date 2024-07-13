@@ -367,7 +367,7 @@ figcaption {
 }
 
 .contenedor__sobremi__img {
-    width: 100%;
+    width: 35%;
     /* background-color: #7198e5; */
 }
 
@@ -377,7 +377,7 @@ figcaption {
 }
 
 .contenedor__sobremi__p {
-    width: 100%;
+    width: 75%;
     /* background-color: #9bbaba; */
 
     display: flex;
@@ -434,6 +434,12 @@ figcaption {
         opacity: 1;
         transform: translateX(0);
 
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1250px) {
+    .wrapper__sobremi {
+        width: 65%;
     }
 }
 
