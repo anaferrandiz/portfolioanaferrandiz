@@ -211,6 +211,10 @@ figcaption {
     /* z-index: 1; */
 }
 
+.img__proyectos{
+    width: 100%;
+}
+
 
 .wrapper__hov {
     position: absolute;
