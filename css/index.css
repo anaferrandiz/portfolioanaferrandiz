@@ -643,6 +643,14 @@ figcaption {
     position: static;
 }
 
+@media (max-width: 400px) {
+    
+    .tabs__proyectos__ul {
+        flex-direction: column;
+        gap: .2rem;
+    }
+}
+
 
 /****************** FIN TABS IDIOMAS ******************/
 
@@ -800,7 +808,7 @@ figcaption {
 
 .carrusel__esclata__img {
     width: 100%;
-    min-height: 12.5rem;
+    /* min-height: 12.5rem; */
     background-color: aqua;
 }
 
@@ -1504,7 +1512,6 @@ figcaption {
     font-size: 3vw;
     text-align: center;
 }
-
 
 
 
