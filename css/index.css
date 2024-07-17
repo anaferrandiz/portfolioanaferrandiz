@@ -234,7 +234,7 @@ figcaption {
     align-items: center;
     z-index: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity .7s ease-in-out;
 }
 
 .wrapper__hov:hover {
@@ -454,7 +454,7 @@ figcaption {
 /***** INICIO ANIMACIONES PROYECTOS CAJA DE TEXTO *****/
 .section__wrap__izq {
     opacity: 0;
-    animation: colorfondo 3s ease-in-out .5s normal forwards;
+    animation: colorfondo 2s ease-in-out .2s normal forwards;
 }
 
 @keyframes colorfondo {
@@ -469,7 +469,7 @@ figcaption {
 
 .wrap__izq__text {
     opacity: 0;
-    animation: wraptext 3s ease-in-out .5s normal forwards;
+    animation: wraptext 2s ease-in-out .2s normal forwards;
 }
 
 @keyframes wraptext {
@@ -487,7 +487,7 @@ figcaption {
 
 .tabs__proyectos {
     opacity: 0;
-    animation: tabs 3s ease-in-out 1.4s normal forwards;
+    animation: tabs 2s ease-in-out 1s normal forwards;
 }
 
 @keyframes tabs {
@@ -509,7 +509,7 @@ figcaption {
 /***** INICIO ANIMACIONES IMÁGENES PROYECTO *****/
 .section__wrap__imgs {
     opacity: 0;
-    animation: imgs 3s ease-in-out 1.4s normal forwards;
+    animation: imgs 2s ease-in-out .8s normal forwards;
 
 }
 
