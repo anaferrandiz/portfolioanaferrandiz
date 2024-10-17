@@ -334,28 +334,6 @@ figcaption {
     color: white;
 }
 
-/* en javaScript para el scroll del móvil, no hover, lo hacemos con active */
-@media (max-width: 700px) {
-    .wrapper__hov {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        /* background-color: rgb(74, 94, 74); */
-        padding: 2rem;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 0;
-        opacity: 0;
-        transition: opacity .5s ease-in-out;
-    }
-
-    .wrapper__hov.active{
-        opacity: 0.88;
-    }
-}
 /**************** FIN MAIN ****************/
 
 
