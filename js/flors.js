@@ -42,3 +42,24 @@ headerBtn.addEventListener('click', function(){
     headerNav.classList.toggle('isActive')
    })
 // ************* FIN MENÚ RESPONSIVE
+
+
+// ************* TABS IDIOMAS
+
+const tabsBtns = document.querySelectorAll('.tabs__proyectos__btn')
+const tabsPs = document.querySelectorAll('.tabs__proyectos__p')
+
+tabsBtns.forEach(function (eachBtn, index) {
+    tabsBtns[index].addEventListener('click', function () {
+        tabsPs.forEach(function (eachP, index) {
+            tabsPs[index].classList.remove('isActive')
+            tabsBtns[index].classList.remove('isActive')
+        })
+
+        tabsPs[index].classList.add('isActive')
+        tabsBtns[index].classList.add('isActive')
+
+    })
+})
+
+// ************* FIN TABS IDIOMAS
