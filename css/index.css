@@ -169,6 +169,7 @@ figcaption {
     right: 2rem;
     z-index: 1;
     filter: drop-shadow(.1rem .1rem 0.20rem black);
+    cursor: pointer;
 }
 
 .wrapper__principal {
@@ -351,10 +352,11 @@ figcaption {
         transition: opacity .5s ease-in-out;
     }
 
-    .wrapper__hov.active{
+    .wrapper__hov.active {
         opacity: 0.88;
     }
 }
+
 /**************** FIN MAIN ****************/
 
 
@@ -1149,175 +1151,321 @@ figcaption {
 }
 
 
-/* INICIO CONTENIDO FLORS */
+/************** INICIO CONTENIDO FLORS **************/
 
-.wrapper__main__flors {
+.main__flors {
+    margin-top: 3.2rem;
+}
+
+.section__flors__princip {
     width: 100%;
-    height: 80vh;
+    min-height: 95vh;
+    background-color: forestgreen;
+    background-image: url(../assets/flors/flors_fons.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.wrapper__flors__princip__text {
+    width: 30%;
+    min-width: 25rem;
+    /* background-color: yellow; */
+    margin: 0 0 5rem 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.caja__flors {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajados__flors {
+    width: 100%;
+    min-height: 25rem;
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    /* padding: 1rem 0 0 3.5rem; */
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja__h2__flors {
+    font-weight: var(--font-weight-main);
+    font-size: 5em;
+    text-transform: uppercase;
+    color: white;
+
+    opacity: 0;
+    animation: cajah2flors 3s ease-in-out .2s normal forwards;
+}
+
+
+@keyframes cajah2flors {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+.flors__princip__moviment {
+    width: 100%;
+    /* background-color: yellow; */
+    margin-bottom: 5rem;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 
-    position: relative;
+    gap: 3rem;
+}
+
+.wrapper__flors__princip__img {
+    width: 3rem;
+    animation: rotarflor 4s infinite linear;
+
+    transition: transform .4s ease-in-out;
+}
+
+@keyframes rotarflor {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper__flors__princip__img:hover {
+    animation: rotation 1s ease-in-out;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper__grid__flors {
+    width: 100%;
+    min-height: 100vh;
+    background-color: yellow;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
 }
 
-.wrapper__contenido__flors {
-    width: 90%;
-    /* min-height: 40vh; */
-    /* background-color: pink; */
+.grid__flors {
+    width: 100%;
+    background-color: goldenrod;
+}
+
+.wrapper__grid__flors__mobil {
+    display: none;
+}
+
+.wrapper__testimonis__text {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #9546f5;
+    padding: 2rem;
 
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
-    align-content: center;
-    gap: 2rem;
+    align-items: center;
+
 }
 
-.wrap__cadaflor {
-    /* background-color: rgba(253, 251, 191, 0.492); */
-    color: black;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
+.testimonis__text {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    padding: 1rem;
-
-    transition: transform 1s ease;
-}
-
-.wrap__cadaflor:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.valflors {
+    /* background-color: fuchsia; */
+    color: #ffea9e;
+    font-size: 8.5vh;
     font-weight: 900;
-    font-size: 1.2em;
 }
 
-.p__flors:nth-child(2) {
-    color: rgba(0, 0, 0, 0.549);
-}
-
-.p__flors:nth-child(3) {
-    color: rgba(0, 0, 0, 0.129);
-}
-
-.wrap__cadaflor.isActive {
-    color: rgb(255, 255, 255);
-    opacity: 1;
-}
-
-.wrapper__imgs__flors {
+.background__paraules {
     width: 100%;
-    height: 100vh;
-    /* background-color: rgb(159, 251, 133); */
-
-    position: relative;
-    /* overflow: hidden; */
-}
-
-.imgs__flors {
-    width: 10%;
-    /* height: 100vh; */
-    /* background-color: darkslateblue; */
-
-    position: absolute;
-
-    opacity: 0;
-    transition: opacity .3s ease-in-out, transform 1s ease;
-    bottom: 0;
-}
-
-.imgs__flors--a {
-    top: 30%;
-    left: 23%;
-}
-
-.imgs__flors--b {
-    bottom: 20%;
-    left: 37%;
-}
-
-.imgs__flors--c {
-    top: 30%;
-    left: 53%;
-}
-
-.imgs__flors--d {
-    bottom: 20%;
-    right: 20%;
-}
-
-.imgs__flors.isVisible {
-    opacity: 1;
-    transform: scale(1.1, 1.1);
+    background-color: rgb(255, 255, 255);
+    padding: 3rem;
 
 }
 
-.contenedor__imgs__flors {
+.wrapper__grid__flors__paraules {
+    width: 70%;
+    /* background-color: #9bbaba; */
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.grid__flors__paraules {
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    /* background-color: tan; */
+    background-color: rebeccapurple;
+}
 
-    z-index: -1;
+.flors__paraules__mobil {
+    width: 100%;
+    display: none;
 }
 
 
-.florssiguiente {
-    position: absolute;
-    bottom: -2rem;
+.wrapper__gif__fanzine {
+    width: 100%;
+    /* min-height: 70vh; */
+    /* background-color: rgb(114, 189, 255); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
 }
 
-@media (max-width: 1200px) {
+.gif__fanzine {
+    width: 60%;
+    background-color: lime;
+}
 
-    .wrapper__contenido__flors {
+.iconoverd {
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        flex-direction: column;
-        gap: 1rem;
+    margin-top: 8.5rem;
+}
 
+@media (min-width: 800px) {
+    .cajados__flors {
+        min-height: 22rem;
     }
 
-    .imgs__flors {
-        width: 40%;
-        top: 20%;
+}
 
+@media (max-width: 900px) {
+
+    .section__flors__princip {
+        min-height: 100vh;
+        background-image: url(../assets/flors/flors_fons_s.webp);
+        background-position: center;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    .wrapper__imgs__flors {
+    .caja__h2__flors {
+        margin-bottom: 2rem;
+        /* margin-left: 2.3rem; */
+    }
+
+    .wrapper__flors__princip__text {
+        /* margin: 6.5rem 0 0 0; */
+        margin-top: 6.5rem;
+        margin-left: 0;
+    }
+
+    .cajados__flors {
+        width: 90%;
+        color: white;
         margin: 0 auto;
     }
 
-    .imgs__flors--a {
-        top: 30%;
-        left: 30%;
+    .idiomesflors {
+        flex-direction: row;
     }
 
-    .imgs__flors--b {
-        top: 40%;
-        left: 20%;
+    .wrapper__grid__flors {
+        display: none;
     }
 
-    .imgs__flors--c {
-        top: 45%;
-        left: 30%;
+    .wrapper__grid__flors__mobil {
+        display: block;
     }
 
-    .imgs__flors--d {
-        top: 50%;
-        left: 30%;
+    .wrapper__testimonis__text {
+        min-height: 70vh;
     }
 
-    .florssiguiente {
-        bottom: -16rem;
-        padding-bottom: 1rem;
+    .testimonis__text {
+        width: 100%;
+        font-size: 4.5vh;
+    }
+
+    .background__paraules {
+        display: none;
+    }
+
+    .flors__paraules__mobil {
+        display: block;
+    }
+
+    .gif__fanzine {
+        width: 90%;
+    }
+
+    .wrapper__gif__fanzine {
+
+        margin-top: 10rem;
     }
 }
 
+@media  (min-width: 1300px) {
+    .wrapper__flors__princip__text{
+        width: 80%;
+        max-width: 60rem;
+        /* background-color: tan; */
+    }
 
+    .flors__princip__moviment{
+        width: 80%;
+    }
+
+    .caja__flors{
+        font-size: 1.3em;
+    }
+}
 
 /***************** FIN PÁGINA FLORS *****************/
 
@@ -2054,4 +2202,3 @@ figcaption {
         color: white;
     }
 }
-
