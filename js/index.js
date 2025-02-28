@@ -34,11 +34,7 @@ tabsBtns.forEach(function (eachBtn, index) {
 
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> ea3e968 (Provant vincular)
 // ************* CARRUSEL ESCLATA-SANG
 
 let positione = 0
