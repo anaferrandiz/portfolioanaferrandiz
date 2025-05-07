@@ -1696,14 +1696,12 @@ figcaption {
 /* Cambiar el cursor a flecha izquierda/derecha */
 .carrusel__clickzone.left {
     left: 0;
-    cursor: w-resize;
-    /* cursor hacia la izquierda */
+    cursor: url('../assets/aigua/arrow__left.png'), auto;    /* cursor hacia la izquierda */
 }
 
 .carrusel__clickzone.right {
     right: 0;
-    cursor: e-resize;
-    /* cursor hacia la derecha */
+    cursor: url('../assets/aigua/arrow__right.png'), auto;      /* cursor hacia la derecha */
 }
 
 .color__btn__aigua {
@@ -2098,6 +2096,16 @@ figcaption {
 
     .carrusel__aigua {
         width: 90%;
+    }
+
+    .carrusel__aigua__btn {
+        width: 1.5rem;
+        height: .4rem;
+        border-radius: 1.25rem;
+    }
+
+    .carrusel__aigua__ul{
+        gap: .5rem;
     }
 
 }
