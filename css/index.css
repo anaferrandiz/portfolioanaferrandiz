@@ -64,6 +64,10 @@ body {
 
 }
 
+.bold {
+    font-weight: 600;
+}
+
 /**************** FIN RESET *****************/
 
 
@@ -595,7 +599,6 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .wrap__izq__text {
@@ -611,6 +614,7 @@ figcaption {
     padding: 0 2rem 0 2rem;
     color: white;
     margin-top: .125rem;
+
 }
 
 .wrap__izq__h2 {
@@ -628,6 +632,7 @@ figcaption {
     width: 84%;
     margin-bottom: 5vh;
     /* background-color: #336765; */
+    text-align: left;
 }
 
 .tabs__proyectos__ul {
@@ -1696,12 +1701,14 @@ figcaption {
 /* Cambiar el cursor a flecha izquierda/derecha */
 .carrusel__clickzone.left {
     left: 0;
-    cursor: url('../assets/aigua/arrow__left.png'), auto;    /* cursor hacia la izquierda */
+    cursor: url('../assets/aigua/arrow__left.png'), auto;
+    /* cursor hacia la izquierda */
 }
 
 .carrusel__clickzone.right {
     right: 0;
-    cursor: url('../assets/aigua/arrow__right.png'), auto;      /* cursor hacia la derecha */
+    cursor: url('../assets/aigua/arrow__right.png'), auto;
+    /* cursor hacia la derecha */
 }
 
 .color__btn__aigua {
@@ -1716,17 +1723,20 @@ figcaption {
 }
 
 .logo__aigua {
-    animation: rodaraigua 9s linear infinite; 
-  }
-  
-  @keyframes rodaraigua {
+    animation: rodaraigua 9s linear infinite;
+}
+
+@keyframes rodaraigua {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg); 
+        transform: rotate(360deg);
     }
-  }
+}
+
+
 
 
 /***************** INICIO PÁGINA MOUSSA *****************/
@@ -1817,6 +1827,8 @@ figcaption {
 
 
 
+
+/*******************+ FIN PÀGINA DESASTRES **************/
 
 
 
@@ -2104,7 +2116,7 @@ figcaption {
         border-radius: 1.25rem;
     }
 
-    .carrusel__aigua__ul{
+    .carrusel__aigua__ul {
         gap: .5rem;
     }
 
@@ -2340,4 +2352,75 @@ figcaption {
     }
 
 
+}
+
+
+/*******************+ INICIO PÀGINA DESASTRES **************/
+
+.backgroundblack {
+    background-color: black;
+    text-align: left;
+}
+
+.carrusel__clickzone__black {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
+.carrusel__clickzone__black.left {
+    left: 0;
+    cursor: url('../assets/desastres/arrow__left_desastres.png'), auto;
+    /* cursor hacia la izquierda */
+}
+
+.carrusel__clickzone__black.right {
+    right: 0;
+    cursor: url('../assets/desastres/arrow__right_desastres.png'), auto;
+    /* cursor hacia la derecha */
+}
+
+
+.wrapper__carrusel__desastres {
+    width: 1100%;
+    /* 1100% porque tiene 11 imágenes */
+    background-color: rgb(22, 167, 61);
+
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    /* gap: 1rem; */
+
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+
+.carrusel__desastres__ul {
+
+    gap: .5rem;
+}
+
+
+.carrusel__desastres__btn {
+    width: 1.5rem;
+    height: .4rem;
+    border-radius: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.27);
+
+}
+
+.carrusel__desastres__btn.isActive {
+    background-color: rgba(253, 247, 247, 0.798);
+}
+
+
+@media (max-width: 1000px) {
+    .carrusel__desastres__btn {
+        width: 1.2rem;
+        height: .4rem;
+        border-radius: 1.25rem;
+    }
 }
