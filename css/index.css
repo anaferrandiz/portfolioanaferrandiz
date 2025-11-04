@@ -2357,70 +2357,29 @@ figcaption {
 
 /*******************+ INICIO PÀGINA DESASTRES **************/
 
+
+.section__desastres{
+    width: 100%;
+    height: 10%;
+    background-color: yellow;
+}
 .backgroundblack {
     background-color: black;
     text-align: left;
 }
 
-.carrusel__clickzone__black {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    z-index: 2;
+.wrap__desastres__imgs{
+    padding-top: 3rem;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
-
-
-
-.carrusel__clickzone__black.left {
-    left: 0;
-    cursor: url('../assets/desastres/arrow__left_desastres.png'), auto;
-    /* cursor hacia la izquierda */
-}
-
-.carrusel__clickzone__black.right {
-    right: 0;
-    cursor: url('../assets/desastres/arrow__right_desastres.png'), auto;
-    /* cursor hacia la derecha */
-}
-
-
-.wrapper__carrusel__desastres {
-    width: 1100%;
-    /* 1100% porque tiene 11 imágenes */
-    background-color: rgb(22, 167, 61);
-
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    /* gap: 1rem; */
-
-    transition: all 0.5s ease;
-    transform: translateX(0);
-}
-
-.carrusel__desastres__ul {
-
-    gap: .5rem;
-}
-
-
-.carrusel__desastres__btn {
-    width: 1.5rem;
-    height: .4rem;
-    border-radius: 1.25rem;
-    background-color: rgba(0, 0, 0, 0.27);
-
-}
-
-.carrusel__desastres__btn.isActive {
-    background-color: rgba(253, 247, 247, 0.798);
-}
-
 
 @media (max-width: 1000px) {
-    .carrusel__desastres__btn {
-        width: 1.2rem;
-        height: .4rem;
-        border-radius: 1.25rem;
-    }
+    .wrap__desastres__imgs{
+    width: 90%;}
 }
