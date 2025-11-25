@@ -2386,3 +2386,35 @@ figcaption {
         width: 90%;
     }
 }
+
+/*******************+ PÀGINA WEBS ***********************/
+
+.colorweb {
+    color: white;
+    z-index: 20;
+}
+
+.wrapper__webs {
+    width: 90%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    margin-top: 6rem;
+}
+
+
+.web__h2{
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .wrapper__webs{
+        width: 100%;
+        padding: 1rem;
+    }
+}
