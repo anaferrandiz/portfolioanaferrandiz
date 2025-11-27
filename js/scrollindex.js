@@ -3,7 +3,7 @@
 const scrollElements = document.querySelectorAll('.wrapper__hov');
 
 // Distancias desde la parte superior en la que quiero activar el efecto (en píxeles)
-const activationPoints = [10, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 280]; // Distancia diferente para la primera caja
+const activationPoints = [10, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 400]; // Distancia diferente para la primera caja
 
 // Función para comprobar si el elemento ha llegado a la distancia especificada
 function checkScroll() {
