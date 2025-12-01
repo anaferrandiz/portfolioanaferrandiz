@@ -1,0 +1,12 @@
+{
+  "name": "Ana Ferràndiz",
+  "short_name": "Ana Ferràndiz",
+  "icons": [
+    {
+      "src": "https://anaferrandiz.es/assets/icon_round.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
