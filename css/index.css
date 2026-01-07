@@ -2403,6 +2403,7 @@ figcaption {
     row-gap: 4rem;
     column-gap: 2rem;
     margin-top: 6rem;
+    opacity: 0;
 }
 
 
@@ -2411,6 +2412,38 @@ figcaption {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+/* ANIMACIONES */
+.wrapper__webs {
+    opacity: 0;
+    animation: webs 3s ease-in-out .1s normal forwards;
+}
+
+@keyframes webs {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contenedor__web{
+    animation: contenedorweb 2s ease-in-out .1s normal forwards;
+}
+
+
+@keyframes contenedorweb{
+    from{
+        transform: translateX(-10%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
 
 @media (max-width: 1000px) {
     .wrapper__webs{
