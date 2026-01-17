@@ -2407,7 +2407,7 @@ figcaption {
 }
 
 
-.web__h2{
+.web__h2 {
     margin-bottom: 2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -2429,26 +2429,39 @@ figcaption {
     }
 }
 
-.contenedor__web{
+.contenedor__web {
     animation: contenedorweb 2s ease-in-out .1s normal forwards;
 }
 
 
-@keyframes contenedorweb{
-    from{
+@keyframes contenedorweb {
+    from {
         transform: translateX(-10%);
     }
 
-    to{
+    to {
         transform: translateX(0);
     }
 }
 
 
 @media (max-width: 1000px) {
-    .wrapper__webs{
+    .wrapper__webs {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         padding: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .prova__margintop {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .prova__margintop_d {
+        margin-top: 6rem;
+      
     }
 }
