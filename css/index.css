@@ -621,7 +621,7 @@ figcaption {
     padding: 0 2rem 1rem 2rem;
     color: white;
     margin-top: .125rem;
-text-align: center;
+    text-align: center;
 }
 
 .wrap__izq__h2 {
@@ -2132,6 +2132,7 @@ text-align: center;
     .wrap__grid {
         grid-template-columns: 1fr;
     }
+
 }
 
 
@@ -2405,6 +2406,14 @@ text-align: center;
     z-index: 20;
 }
 
+.wrap__p__webs {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 8rem;
+    padding: 0 7rem;
+    text-transform: uppercase;
+}
+
 .wrapper__webs {
     width: 90%;
     padding: 2rem;
@@ -2413,7 +2422,7 @@ text-align: center;
     margin: 0 auto;
     row-gap: 4rem;
     column-gap: 2rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
     opacity: 0;
 }
 
@@ -2461,5 +2470,12 @@ text-align: center;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         padding: 1rem;
+    }
+
+    .wrap__p__webs {
+        margin-top: 6rem;
+        padding: 0 1rem;
+        background-color: cadetblue;
+        text-align: center;
     }
 }
