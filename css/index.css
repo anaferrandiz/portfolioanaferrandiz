@@ -2475,7 +2475,7 @@ figcaption {
     .wrap__p__webs {
         margin-top: 6rem;
         padding: 0 1rem;
-        background-color: cadetblue;
+        /* background-color: cadetblue; */
         text-align: center;
     }
 }
