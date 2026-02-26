@@ -697,7 +697,22 @@ figcaption {
     }
 }
 
+.tabs__proyectos__wrapper {
+    display: grid;
+}
 
+/* Todos los párrafos ocupan la misma celda del grid */
+.tabs__proyectos__p {
+    grid-area: 1 / 1;
+    opacity: 0;
+    transition: opacity .5s ease;
+    pointer-events: none;
+}
+
+.tabs__proyectos__p.isActive {
+    opacity: 1;
+    pointer-events: auto;
+}
 /****************** FIN TABS IDIOMAS ******************/
 
 .wrap__datos {
@@ -2401,6 +2416,9 @@ figcaption {
 
 /*******************+ PÀGINA WEBS ***********************/
 
+.p__web{
+    font-weight: 800;
+}
 .colorweb {
     color: white;
     z-index: 20;

@@ -14,19 +14,21 @@ headerBtn.addEventListener('click', function(){
 
 // ************* TABS IDIOMAS
 
-const tabsBtns = document.querySelectorAll('.tabs__proyectos__btn')
-const tabsPs = document.querySelectorAll('.tabs__proyectos__p')
+// Seleccionamos cada bloque de tabs por separado
+document.querySelectorAll('.tabs__proyectos').forEach(function (bloque) {
+    const btns = bloque.querySelectorAll('.tabs__proyectos__btn')
+    const ps = bloque.querySelectorAll('.tabs__proyectos__p')
 
-tabsBtns.forEach(function (eachBtn, index) {
-    tabsBtns[index].addEventListener('click', function () {
-        tabsPs.forEach(function (eachP, index) {
-            tabsPs[index].classList.remove('isActive')
-            tabsBtns[index].classList.remove('isActive')
+    btns.forEach(function (btn, index) {
+        btn.addEventListener('click', function () {
+            // Limpiamos isActive solo dentro de este bloque
+            btns.forEach(b => b.classList.remove('isActive'))
+            ps.forEach(p => p.classList.remove('isActive'))
+
+            // Activamos el correspondiente
+            btn.classList.add('isActive')
+            ps[index].classList.add('isActive')
         })
-
-        tabsPs[index].classList.add('isActive')
-        tabsBtns[index].classList.add('isActive')
-
     })
 })
 
