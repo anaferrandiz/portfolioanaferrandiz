@@ -349,6 +349,13 @@ figcaption {
     color: white;
 }
 
+.blau{
+        background-color: #2c325e;
+            color: white;
+
+
+}
+
 /* en javaScript para el scroll del móvil, no hover, lo hacemos con active */
 @media (max-width: 700px) {
     .wrapper__hov {
@@ -601,7 +608,7 @@ figcaption {
     height: 100vh;
     position: fixed; */
     padding-top: 3rem;
-    background-color: #ae5c5e;
+    /* background-color: #ae5c5e; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1990,7 +1997,7 @@ figcaption {
     .section__wrap__izq {
         width: 100%;
         min-height: 100vh;
-        background-color: #ae5c5e;
+        /* background-color: #ae5c5e; */
         position: inherit;
         /* margin-top: 3rem; */
     }
