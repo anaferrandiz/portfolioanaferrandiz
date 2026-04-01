@@ -405,20 +405,20 @@ figcaption {
 
 /***************** INICIO PÁGINA SOBREMI  *****************/
 
-
 .wrapper__sobremi {
-    width: 55%;
-    /* background-color: salmon; */
-    margin: 13rem auto;
+    width: 100%;
+    min-height: 92vh;
+    margin: 4rem auto;
 
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-end;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .contenedor__sobremi__img {
-    width: 35%;
+    width: 25%;
+    margin-right: 1rem;
     /* background-color: #7198e5; */
 }
 
@@ -428,19 +428,23 @@ figcaption {
 }
 
 .contenedor__sobremi__p {
-    width: 75%;
-    /* background-color: #9bbaba; */
+    width: clamp(17.5rem, 45%, 37.5rem);
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 1.4rem;
+    padding-left: 3rem;
+}
+
+
+.contenedor__sobremi__img {
+    align-self: flex-end;
 }
 
 .h3__sobremi {
-    font-size: 4vw;
-    margin-bottom: 6vh;
+    font-size: 1em;
+    margin-bottom: 4vh;
 }
 
 .p__sobremi {
@@ -452,6 +456,21 @@ figcaption {
     background-color: rgb(229, 228, 228);
 }
 
+.sobremi__idiomes__p {
+    margin-bottom: 1rem;
+}
+
+.idiomes__cast {
+    color: rgb(136, 136, 136);
+}
+
+.idiomes__eng {
+    color: rgb(202, 202, 202);
+}
+
+.tabs__proyectos {
+    display: none;
+}
 
 /* ANIMACIONES */
 .wrapper__sobremi {
@@ -488,11 +507,7 @@ figcaption {
     }
 }
 
-@media (min-width: 1001px) and (max-width: 1250px) {
-    .wrapper__sobremi {
-        width: 65%;
-    }
-}
+
 
 /***************** FIN PÁGINA SOBREMI  *****************/
 
@@ -2156,6 +2171,22 @@ figcaption {
         grid-template-columns: 1fr;
     }
 
+    .contenedor__sobremi__img {
+        align-self: center;
+    }
+
+    .tabs__proyectos {
+        display:block;
+    }
+
+    .sobremi__idiomes{
+        display: none;
+    }
+
+    .wrapper__sobremi{
+        min-height: 10vh;
+
+    }
 }
 
 
@@ -2310,15 +2341,15 @@ figcaption {
         grid-template-columns: repeat(1, 1fr);
     }
 
-     .fullimage{
-        width: 100% !important; 
+    .fullimage {
+        width: 100% !important;
     }
 
     .section__wrap__imgs {
         width: 90%;
     }
 
-   
+
 
     .proyectos {
         width: 100%;
