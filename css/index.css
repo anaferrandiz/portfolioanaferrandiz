@@ -468,7 +468,7 @@ figcaption {
     color: rgb(202, 202, 202);
 }
 
-.tabs__proyectos {
+.tabs__proyectos__sobremi {
     display: none;
 }
 
@@ -2175,7 +2175,7 @@ figcaption {
         align-self: center;
     }
 
-    .tabs__proyectos {
+    .tabs__proyectos__sobremi {
         display:block;
     }
 
@@ -2444,7 +2444,7 @@ figcaption {
 
 .wrap__desastres__imgs {
     padding-top: 3rem;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -2455,7 +2455,7 @@ figcaption {
 
 @media (max-width: 1000px) {
     .wrap__desastres__imgs {
-        width: 90%;
+        width: 95%;
     }
 }
 
