@@ -468,7 +468,7 @@ figcaption {
     color: rgb(202, 202, 202);
 }
 
-.tabs__proyectos {
+.tabs__proyectos__sobremi {
     display: none;
 }
 
@@ -2175,15 +2175,15 @@ figcaption {
         align-self: center;
     }
 
-    .tabs__proyectos {
-        display:block;
+    .tabs__proyectos__sobremi {
+        display: block;
     }
 
-    .sobremi__idiomes{
+    .sobremi__idiomes {
         display: none;
     }
 
-    .wrapper__sobremi{
+    .wrapper__sobremi {
         min-height: 10vh;
 
     }
@@ -2444,7 +2444,7 @@ figcaption {
 
 .wrap__desastres__imgs {
     padding-top: 3rem;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -2455,8 +2455,19 @@ figcaption {
 
 @media (max-width: 1000px) {
     .wrap__desastres__imgs {
-        width: 90%;
+        width: 95%;
     }
+}
+
+.wrap__cadires__imgs {
+    width: 80%;
+    padding-top: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 /*******************+ PÀGINA WEBS ***********************/
