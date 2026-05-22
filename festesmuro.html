@@ -70,21 +70,27 @@ Estructura:
 
     <main class="main__festesmuro">
 
-        <a href="#arrow" class="main__arrow">
-            <img src="assets/arrow.png" alt="Arrow" loading="lazy">
+        <a href="#arrow" class="main__arrow" aria-label="Volver arriba">
+            <img src="assets/arrow.png" alt="" loading="lazy">
         </a>
 
-        <div class="wrap__grid">
-            <div class="section__wrap__izq muro">
+        <div class="wrap__general">
 
-                <div class="wrap__izq__text muro">
+            <div class="wrap__grid__projects">
 
-                    <h2 class="wrap__izq__h2 muro">Festes de Muro</h2>
+                <div class="wrap__left__txt">
 
+                    <div class="wrap__flex__txt">
+                        <h2 class="h2__title">Festes de Muro</h2>
+                        <p class="left__date">2022-2023</p>
+                        <p class="left">Muro d'Alcoi</p>
+                        <p class="left">Encàrrec</p>
+                        <p class="left__film">Digital</p>
+                    </div>
 
                     <!-- ************ INICIO TABS IDIOMAS ************ -->
 
-                    <div class="tabs__proyectos muro">
+                    <div class="tabs__proyectos">
 
                         <ul class="tabs__proyectos__ul">
                             <li class="tabs__proyectos__li">
@@ -98,6 +104,11 @@ Estructura:
                             <li class="tabs__proyectos__li">
                                 <button class="tabs__proyectos__btn">ENG</button>
                             </li>
+
+                            <li class="tabs__proyectos__li">
+                                <button class="tabs__proyectos__btn">
+                                    عربي</button>
+                            </li>
                         </ul>
 
                         <div class="tabs__proyectos__wrapper">
@@ -109,6 +120,7 @@ Estructura:
                                 Valenciana. Estes, les de Muro d’Alcoi, dedicades a la Verge dels Desamparats, i
                                 reconegudes
                                 com a Festes d’Interés Turístic Autonòmic, es celebren cada any des de 1822.
+
                             </p>
                             <p class="tabs__proyectos__p">
                                 Las fiestas de Moros y Cristianos forman parte de las conmemoraciones y representaciones
@@ -129,236 +141,233 @@ Estructura:
                                 and have been recognized as Festivals of Regional Tourist Interest. They have been
                                 celebrated annually since 1822.
                             </p>
+
+                            <p class="tabs__proyectos__p">
+                                احتفالات "الموريسك والمسيحيين" جزء من إحياء ذكرى المعارك الملحمية التي دارت بين فريق
+                                الصليب وفريق الهلال في أرجاء مجتمع فالنسيا. وهذه الاحتفالات، التي تُقام في مورو دي ألكوي
+                                إكراماً للعذراء دي لوس ديسامباراذوس، والمعترف بها بوصفها احتفالات ذات أهمية سياحية
+                                إقليمية، تُحتفل بها كل عام منذ سنة ١٨٢٢.
+                            </p>
                         </div>
 
                     </div>
                     <!-- ************ FIN TABS IDIOMAS ************ -->
 
-                    <div class="wrap__datos">
-                        <p class="wrap__izq__tipo">Encàrrec</p>
-                        <p class="wrap__izq__fecha">2022-23 - Muro d'Alcoi</p>
-
-                    </div>
                 </div>
 
-            </div>
-            <!-- ************ INICIO IMÁGENES ************ -->
+                <section class="wrap__right__imgs">
 
-            <div id="arrow" class="section__wrap__imgs">
+                    <div class="proyectos proyectos__festesmuro">
 
-                <div class="proyectos proyectos__festesmuro">
+                        <div class="contenedor__img contenedor__img__festesmuro" id="arrow"> 
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_01.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_01.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_02.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_02.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_03.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_03.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_04.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_04.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_05.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_05.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_06.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_06.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_07.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_07.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_08.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_08.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_09.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_09.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_10.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_10.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_11.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_11.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_12.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_12.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
 
 
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_01.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_01.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_13.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_13.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_14.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_14.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_15.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_15.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_16.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_16.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_17.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_17.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_18.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_18.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_19.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_19.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_20.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_20.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_21.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_21.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_22.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_22.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_23.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_23.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
+                        <div class="contenedor__img contenedor__img__festesmuro">
+                            <picture>
+                                <source srcset="assets/festesmuro/festesmuro_24.webp" media="(max-width:1000px)">
+                                <img src="assets/festesmuro/festesmuro_24.webp" alt="Festes de Muro"
+                                    title="Festes de Muro" class="img__proyectos" loading="lazy">
+                            </picture>
+                        </div>
+
                     </div>
 
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_02.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_02.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
+                    <p class="p__siguiente">
+                        <a href="plamienok.html" title="Siguiente proyecto" target="_self"
+                            class="siguiente__proyecto">Següent
+                            projecte &#10142;</a>
+                    </p>
+                </section>
 
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_03.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_03.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_04.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_04.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_05.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_05.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_06.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_06.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_07.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_07.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_08.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_08.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_09.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_09.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_10.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_10.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_11.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_11.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_12.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_12.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_13.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_13.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_14.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_14.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_15.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_15.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_16.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_16.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_17.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_17.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_18.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_18.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_19.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_19.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_20.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_20.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_21.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_21.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_22.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_22.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_23.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_23.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                    <div class="contenedor__img contenedor__img__festesmuro">
-                        <picture>
-                            <source srcset="assets/festesmuro/festesmuro_24.webp" media="(max-width:1000px)">
-                            <img src="assets/festesmuro/festesmuro_24.webp" alt="Festes de Muro" title="Festes de Muro"
-                                class="img__proyectos" loading="lazy">
-                        </picture>
-                    </div>
-
-                </div>
-
-                <!-- ************ FIN IMÁGENES ************ -->
-
-                <p class="p__siguiente">
-                    <a href="plamienok.html" title="Siguiente proyecto" target="_self"
-                        class="siguiente__proyecto">Següent
-                        projecte &#10142;</a>
-                </p>
             </div>
 
         </div>
+
     </main>
 
 </body>
 
-
-</html>
 
 </html>

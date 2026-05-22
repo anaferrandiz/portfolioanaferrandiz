@@ -23,7 +23,6 @@ Estructura:
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="https://anaferrandiz.es/assets/icon_round.png">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/carrusel_aigua.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,35 +66,47 @@ Estructura:
 
     <main class="main__plamienok">
 
-        <a href="#arrow" class="main__arrow">
-            <img src="assets/arrow.png" alt="Arrow" loading="lazy">
+        <a href="#arrow" class="main__arrow" aria-label="Volver arriba">
+            <img src="assets/arrow.png" alt="" loading="lazy">
         </a>
 
-        <div class="wrap__grid">
-            <div class="section__wrap__izq agua prova__margintop">
+        <div class="wrap__general">
 
-                <div class="wrap__izq__text agua">
+            <div class="wrap__grid__projects">
 
+                <div class="wrap__left__txt">
 
-                    <h2 class="wrap__izq__h2 agua">No queda agua</h2>
+                    <div class="wrap__flex__txt">
+                        <h2 class="h2__title">No queda agua</h2>
+                        <p class="left__date">Octubre 2024</p>
+                        <a href="https://alegrerexachs.netlify.app/" title="Alegre Rexachs" target="_blank"
+                            rel="noreferrer">
+                            <p class="wrap__izq__tipo">Projecte personal amb<span class="bold"> Alegre
+                                    Rexachs</span></p>
+                        </a>
+                        <p class="left__film">Digital</p>
 
-
+                    </div>
 
                     <!-- ************ INICIO TABS IDIOMAS ************ -->
 
-                    <div class="tabs__proyectos agua">
+                    <div class="tabs__proyectos">
 
                         <ul class="tabs__proyectos__ul">
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn isActive sahara__btn">VAL</button>
+                                <button class="tabs__proyectos__btn isActive">VAL</button>
                             </li>
 
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn sahara__btn">CAST</button>
+                                <button class="tabs__proyectos__btn">CAST</button>
                             </li>
 
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn sahara__btn">ENG</button>
+                                <button class="tabs__proyectos__btn">ENG</button>
+                            </li>
+
+                            <li class="tabs__proyectos__li">
+                                <button class="tabs__proyectos__btn">عربي</button>
                             </li>
                         </ul>
 
@@ -112,6 +123,7 @@ Estructura:
                                 i l'ansietat col·lectiva, mostrant com la por i la manca d'empatia poden exacerbar tant
                                 la
                                 desigualtat com la degradació de l'entorn.
+
                             </p>
                             <p class="tabs__proyectos__p">
                                 El 30 de octubre del 2024, tras el rumor sobre un corte de agua en Valencia, se desató
@@ -142,142 +154,135 @@ Estructura:
                                 can
                                 worsen both inequality and environmental degradation.
                             </p>
+
+                            <p class="tabs__proyectos__p">
+                                في الثلاثين من أكتوبر عام ٢٠٢٤، وعقب الإشاعة التي راجت عن انقطاع المياه في بلنسية،
+                                اندلعت ردّة فعل مفرطة: آلاف الأشخاص هرعوا لشراء أكبر قدر ممكن من زجاجات المياه. ولم يكشف
+                                هذا الهوس عن الأنانية وانعدام التضامن فحسب، بل أسهم أيضاً في إهدار غير مبرر للبلاستيك.
+                                في الوقت ذاته، كانت المناطق المنكوبة جراء عاصفة الـ"دانا" تفتقر إلى الغذاء والمياه.
+                                ويعكس هذا السلوك انفصالاً مثيراً للقلق بين حقيقة الأزمة والهلع الجماعي، مُجلّياً كيف
+                                يمكن للخوف وغياب التعاطف أن يُفاقما التفاوت الاجتماعي والتدهور البيئي معاً. </p>
                         </div>
 
                     </div>
                     <!-- ************ FIN TABS IDIOMAS ************ -->
 
-                    <div class="wrap__datos">
-                        <p class="wrap__izq__tipo">Projecte personal amb <a href="https://alegrerexachs.netlify.app/"
-                                title="Alegre Rexachs" target="_blank" rel="noreferrer" class="alegrehover"> Alegre
-                                Rexachs</a>
-                        </p>
-                        <p class="wrap__izq__fecha">Octubre 2024 - València</p>
-
-                    </div>
                 </div>
 
-            </div>
+                <section class="wrap__right__imgs">
 
-            <!-- ************ INICIO IMÁGENES ************ -->
+                    <div class="grid__imgs">
 
-            <div id="arrow" class="section__wrap__imgs">
+                        <div class="carousel" id="arrow">
 
-                <div class="proyectos">
+                            <div class="slides">
 
-                    <div class="carrusel__esclata carrusel__aigua">
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_01_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_01.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
 
-                        <div class="carrusel__clickzone left"></div>
-                        <div class="carrusel__clickzone right"></div>
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_02_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_02.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
 
-                        <div class="wrapper__carrusel__aigua">
-                            <img src="assets/aigua/aigua_01.webp" alt="Imagen 0" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_02.webp" alt="Imagen 1" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_03.webp" alt="Imagen 2" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_04.webp" alt="Imagen 3" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_05.webp" alt="Imagen 4" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_06.webp" alt="Imagen 5" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_07.webp" alt="Imagen 6" class="carrusel__esclata__img">
-                            <img src="assets/aigua/aigua_08.webp" alt="Imagen 7" class="carrusel__esclata__img">
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_03_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_03.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
+
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_04_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_04.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
+
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_05_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_05.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
+
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_06_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_06.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
+
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_07_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_07.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
+
+                                <picture class="slide">
+                                    <source srcset="assets/aigua/aigua_08_s.webp" media="(max-width:1000px)">
+                                    <img src="assets/aigua/aigua_08.webp" alt="Fanzine Aigua" class="imgs">
+                                </picture>
+                            </div>
+
+                            <!-- Zonas de clic izquierda / derecha -->
+                            <div class="tap-zone left-zone"></div>
+                            <div class="tap-zone right-zone"></div>
+
+
+                            <!-- Controles inferiores -->
+                            <div class="carousel-controls">
+                                <button class="btn prev" aria-label="Imatge anterior">‹</button>
+                                <div class="page-indicator">1 / 3</div>
+                                <button class="btn next" aria-label="Imatge següent">›</button>
+                            </div>
+
                         </div>
 
-                        <button class="carrusel__esclata__arrow siguientearroww siguientearroww__aigua">
-
-                        </button>
-
-                        <button class="carrusel__esclata__arrow anteriorarroww anteriorarroww__aigua">
-
-                        </button>
-
-                        <ul class="carrusel__esclata__ul carrusel__aigua__ul">
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua isActive"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-
-                            <li class="carrusel__esclata__li">
-                                <button class="carrusel__aigua__btn color__btn__aigua"></button>
-                            </li>
-                        </ul>
 
                     </div>
 
-                    <div class="contenedor__img">
+
+
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_09_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_09.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_09.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_10_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_10.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_10.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_11_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_11.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_11.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_12_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_12.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_12.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_13_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_13.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_13.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_14_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_14.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_14.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/aigua/aigua_15_s.webp" media="(max-width:1000px)">
-                            <img src="assets/aigua/aigua_15.webp" alt="Plamienok" title="No queda agua"
-                                class="img__proyectos" loading="lazy">
+                            <img src="assets/aigua/aigua_15.webp" alt="Aigua" class="imgs">
                         </picture>
                     </div>
 
@@ -286,24 +291,24 @@ Estructura:
                             class="logo__aigua">
                     </div>
 
-
-                    <!-- ************ FIN IMÁGENES ************ -->
-
                     <p class="p__siguiente">
                         <a href="moussa.html" title="Siguiente proyecto" target="_self"
                             class="siguiente__proyecto">Següent
                             projecte &#10142;</a>
                     </p>
-                </div>
+                </section>
+
 
             </div>
 
         </div>
+
     </main>
 
+    <script src="js/carrusel.js"></script>
+    <script src="js/carrusel_aigua.js"></script>
 </body>
 
 
 </html>
 
-</html>

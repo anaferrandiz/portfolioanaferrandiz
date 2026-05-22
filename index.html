@@ -13,7 +13,7 @@ Estructura:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Ferràndiz</title>
-    <meta name="description" content="Ana Ferràndiz - Fotógrafa y Frontend Developer">
+    <meta name="description" content="Ana Ferràndiz — fotógrafa y frontend developer. Proyectos, sobre mí y contacto.">
     <!-- <link rel="icon" href="assets/title.ico"> -->
     <link rel="icon" href="https://anaferrandiz.es/assets/icon_round.png" sizes="192x192" type="image/png">
     <link rel="manifest" href="/manifest.json">
@@ -78,9 +78,10 @@ Estructura:
 
     <main class="main">
 
-        <a href="#arrow" class="main__arrow">
-            <img src="assets/arrow.png" alt="Flecha">
+        <a href="#arrow" class="main__arrow" aria-label="Volver arriba">
+            <img src="assets/arrow.png" alt="" loading="lazy">
         </a>
+
 
         <div class="wrapper__principal">
 
@@ -91,7 +92,8 @@ Estructura:
 
                     <picture>
                         <source srcset="assets/main_marroc_copia_s.webp" media="(max-width:1000px)">
-                        <img src="assets/main_marroc_copia.webp" alt="Marroc" title="Marroc" class="imgs" loading="lazy">
+                        <img src="assets/main_marroc_copia.webp" alt="Marroc" title="Marroc" class="imgs"
+                            loading="lazy">
                     </picture>
 
                     <div class="wrapper__hov sahara">
@@ -187,7 +189,7 @@ Estructura:
 
                 </div>
 
-                <div id="arrow" class="principal__img">
+                <div class="principal__img">
 
                     <picture>
                         <source srcset="assets/main_portugal_s.webp" media="(max-width:1000px)">
@@ -195,7 +197,7 @@ Estructura:
                     </picture>
 
 
-                    <div class="wrapper__hov agua">
+                    <div class="wrapper__hov flors">
                         <p class="principal__img__date">2025</p>
 
                         <a href="portugal.html" target="_self">
@@ -210,15 +212,15 @@ Estructura:
                 <div class="principal__img">
                     <picture>
                         <source srcset="assets/main_covers_copia_s.webp" media="(max-width:1000px)">
-                        <img src="assets/main_covers_copia.webp" alt="Coche cubierto con tela en Egipto" title="Coches y telas"
-                            class="imgs" loading="lazy">
+                        <img src="assets/main_covers_copia.webp" alt="Coche cubierto con tela en Egipto"
+                            title="Coches y telas" class="imgs" loading="lazy">
                     </picture>
 
                     <div class="wrapper__hov covers">
                         <p class="principal__img__date">2022</p>
 
                         <a href="cochesytelas.html" target="_self">
-                            <h2 class="principal__img__h2 arab__cairo">السيارات والأقمشة</h2>
+                            <h2 class="principal__img__h2 arab__cairo">Coches y telas</h2>
                         </a>
 
                         <h3 class="principal__img__h3">Egipte</h3>
@@ -490,7 +492,5 @@ Estructura:
     </main>
 
 </body>
-
-</html>
 
 </html>
