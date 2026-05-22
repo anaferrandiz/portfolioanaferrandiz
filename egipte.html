@@ -70,17 +70,24 @@ Estructura:
 
     <main class="main__egipte">
 
-        <a href="#arrow" class="main__arrow">
-            <img src="assets/arrow.png" alt="Arrow" loading="lazy">
+         <a href="#arrow" class="main__arrow" aria-label="Volver arriba">
+            <img src="assets/arrow.png" alt="" loading="lazy">
         </a>
 
-        <div class="wrap__grid">
-            <div class="section__wrap__izq egiptecolor heightegipte">
+         <div class="wrap__general">
 
-                <div class="wrap__izq__text egiptecolor heightegipte">
+            <div class="wrap__grid__projects">
 
-                    <h2 class="wrap__izq__h2">Egipte</h2>
+                <div class="wrap__left__txt">
 
+                    <div class="wrap__flex__txt">
+                        <h2 class="h2__title">مصر</h2>
+                        <h2 class="h2__title">Egipte</h2>
+                        <p class="left__date">2022</p>
+                        <p class="left">Egipte</p>
+                        <p class="left">Viatge personal</p>
+                        <p class="left__film">Digital</p>
+                    </div>
 
                     <!-- ************ INICIO TABS IDIOMAS ************ -->
 
@@ -88,25 +95,30 @@ Estructura:
 
                         <ul class="tabs__proyectos__ul">
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn isActive btn__egipte">VAL</button>
+                                <button class="tabs__proyectos__btn isActive">VAL</button>
                             </li>
 
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn btn__egipte">CAST</button>
+                                <button class="tabs__proyectos__btn">CAST</button>
                             </li>
 
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn btn__egipte">ENG</button>
+                                <button class="tabs__proyectos__btn">ENG</button>
+                            </li>
+
+                            <li class="tabs__proyectos__li">
+                                <button class="tabs__proyectos__btn btn__covers">عربي</button>
                             </li>
                         </ul>
 
                         <div class="tabs__proyectos__wrapper">
                             <p class="tabs__proyectos__p isActive">
-                                Durant un mes vam viatjar per tot Egipte per lliure. Vam visitar el país de nord a sud,
+                               Durant un mes vam viatjar per tot Egipte per lliure. Vam visitar el país de nord a sud,
                                 fent
                                 un total de 5000km. Les imatges amb paper de ticket son imatges que regalàvem a les
                                 persones
                                 que ens deixaven fotografiar-les.
+
                             </p>
                             <p class="tabs__proyectos__p">
                                 Durante un mes viajamos por todo Egipto por libre. Visitamos el país de norte a sur,
@@ -115,39 +127,34 @@ Estructura:
                                 a las personas que nos dejaban fotografiarlas.
                             </p>
                             <p class="tabs__proyectos__p">
-                                For a month, we traveled all over Egypt independently. We visited the country from north
+                                 For a month, we traveled all over Egypt independently. We visited the country from north
                                 to
                                 south, covering a total of 5000 km. The images with ticket paper are pictures we gave to
                                 the
                                 people who let us photograph them.
+                            </p>
+
+                            <p class="tabs__proyectos__p">
+                                قضينا شهراً كاملاً نجوب أرجاء مصر باستقلالية تامة، مستكشفَين البلاد من شمالها إلى جنوبها، وقد بلغت المسافة التي قطعناها خمسة آلاف كيلومتر. أما الصور المطبوعة على ورق الإيصالات، فكانت هدايا نقدّمها للأشخاص الذين أذنوا لنا بتصويرهم.
+
                             </p>
                         </div>
 
                     </div>
                     <!-- ************ FIN TABS IDIOMAS ************ -->
 
-                    <div class="wrap__datos">
-                        <p class="wrap__izq__tipo">Viatge personal</p>
-                        <p class="wrap__izq__fecha">Desembre 2022 - Egipte</p>
-
-                    </div>
                 </div>
 
-            </div>
-            <!-- ************ INICIO IMÁGENES ************ -->
-            <div id="arrow" class="section__wrap__imgs">
+                <section class="wrap__right__imgs">
 
-                <div class="proyectos">
-
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects" id="arrow">
                         <picture>
                             <source srcset="assets/egipte/egipte_01_s.webp" media="(max-width:1000px)">
-                            <img src="assets/egipte/egipte_01.webp" alt="Egipto" title="Egipte" class="img__proyectos"
-                                loading="lazy">
+                            <img src="assets/egipte/egipte_01.webp" alt="Egipto" title="Egipte" class="img__proyectos">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_02_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_02.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -155,7 +162,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_03_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_03.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -163,7 +170,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_04_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_04.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -171,16 +178,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_05_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_05.webp" alt="Egipto" title="Egipte" class="img__proyectos"
                                 loading="lazy">
                         </picture>
-
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_06_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_06.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -188,7 +194,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_07_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_07.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -196,7 +202,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_08_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_08.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -204,7 +210,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_09_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_09.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -212,7 +218,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_10_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_10.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -220,7 +226,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_11_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_11.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -228,7 +234,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_12_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_12.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -236,7 +242,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_13_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_13.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -244,15 +250,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
-                        <picture>
+                    <div class="wrap__imgs__projects">
+                       <picture>
                             <source srcset="assets/egipte/egipte_14_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_14.webp" alt="Egipto" title="Egipte" class="img__proyectos"
                                 loading="lazy">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_15_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_15.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -260,15 +266,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
-                        <picture>
+                    <div class="wrap__imgs__projects">
+                       <picture>
                             <source srcset="assets/egipte/egipte_16_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_16.webp" alt="Egipto" title="Egipte" class="img__proyectos"
                                 loading="lazy">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_17_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_17.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -276,17 +282,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_18_s.webp" media="(max-width:1000px)">
-
                             <img src="assets/egipte/egipte_18.webp" alt="Egipto" title="Egipte" class="img__proyectos"
                                 loading="lazy">
                         </picture>
-
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_19_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_19.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -294,7 +298,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_20_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_20.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -302,7 +306,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_21_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_21.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -310,7 +314,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_22_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_22.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -318,7 +322,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_23_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_23.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -326,7 +330,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_24_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_24.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -334,7 +338,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_25_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_25.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -342,7 +346,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_26_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_26.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -350,7 +354,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_27_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_27.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -358,7 +362,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_28_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_28.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -366,7 +370,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_29_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_29.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -374,7 +378,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_30_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_30.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -382,7 +386,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                     <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_31_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_31.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -390,7 +394,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                     <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_32_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_32.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -398,7 +402,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                     <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_33_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_33.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -406,7 +410,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                     <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_34_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_34.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -414,7 +418,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                     <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_35_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_35.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -422,7 +426,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                     <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/egipte/egipte_36_s.webp" media="(max-width:1000px)">
                             <img src="assets/egipte/egipte_36.webp" alt="Egipto" title="Egipte" class="img__proyectos"
@@ -430,22 +434,21 @@ Estructura:
                         </picture>
                     </div>
 
-                    <!-- ************ FIN IMÁGENES ************ -->
-
                     <p class="p__siguiente">
                         <a href="esclatasang.html" title="Siguiente proyecto" target="_self"
                             class="siguiente__proyecto">Següent
                             projecte &#10142;</a>
                     </p>
-                </div>
+                </section>
 
             </div>
+
         </div>
+
+
     </main>
 
 </body>
 
-
-</html>
 
 </html>

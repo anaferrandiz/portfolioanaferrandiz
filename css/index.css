@@ -584,6 +584,10 @@ figcaption {
     margin-bottom: 3rem;
 }
 
+.flex__txt__bottom {
+    margin-bottom: 1rem;
+}
+
 .wrap__imgs__projects {
     width: 80%;
     margin: 0 auto;
@@ -661,83 +665,87 @@ figcaption {
 }
 
 
- /******** CARRUSEL *******/
- .carousel {
-     width: 50%;
-     position: relative;
-     overflow: hidden;
-     margin: 0 auto;
-     margin-bottom: 4rem;
- }
+/******** CARRUSEL *******/
+.carousel {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
 
- .slides {
-     display: flex;
-     transition: transform 0.35s ease;
-     will-change: transform;
-     touch-action: pan-y;
- }
+.carousel__horizontal {
+    width: 80%;
+}
 
- .slide {
-     flex: 0 0 100%;
-     box-sizing: border-box;
-     text-align: center;
- }
+.slides {
+    display: flex;
+    transition: transform 0.35s ease;
+    will-change: transform;
+    touch-action: pan-y;
+}
+
+.slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 
 
 
 
- /* Zonas de clic invisibles */
- .tap-zone {
-     position: absolute;
-     top: 0;
-     height: 100%;
-     width: 50%;
-     z-index: 2;
- }
+/* Zonas de clic invisibles */
+.tap-zone {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+}
 
- .left-zone {
-     left: 0;
- }
+.left-zone {
+    left: 0;
+}
 
- .right-zone {
-     right: 0;
- }
+.right-zone {
+    right: 0;
+}
 
- /* Controles */
- .carousel-controls {
-     display: flex;
-     flex-flow: row nowrap;
-     justify-content: flex-start;
-     align-items: center;
+/* Controles */
+.carousel-controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
 
- }
+}
 
- .carousel .btn {
-     color: rgb(0, 0, 0);
-     padding: 6px 10px;
-     cursor: pointer;
- }
+.carousel .btn {
+    color: rgb(0, 0, 0);
+    padding: 6px 10px;
+    cursor: pointer;
+}
 
- /* indicador tipo 1/3 */
- .page-indicator {
-     font-size: .9375rem;
- }
+/* indicador tipo 1/3 */
+.page-indicator {
+    font-size: .9375rem;
+}
 
- .btn {
-     cursor: pointer;
-     z-index: 3;
- }
+.btn {
+    cursor: pointer;
+    z-index: 3;
+}
 
- @media (max-width:1200px) {
-     .carousel {
-         width: 100%;
-     }
+@media (max-width:1200px) {
+    .carousel {
+        width: 100%;
+    }
 
-     .text__h2 {
-         margin-top: 1rem;
-     }
- }
+    .text__h2 {
+        margin-top: 1rem;
+    }
+}
 
 /* FLECHAS PARA CARRUSEL GENERAL */
 
@@ -918,7 +926,7 @@ figcaption {
 .tabs__proyectos__btn {
     /* background-color: lightgrey; */
     font-size: .7em;
-    padding: .3rem 1.5rem;
+    padding: .3rem 1rem;
     cursor: pointer;
     border-radius: 1.25rem;
     transition: all 1s ease;
@@ -1260,6 +1268,7 @@ figcaption {
 .wrapper__fullacontactes {
     width: 100%;
     /* background-color: orange; */
+    margin-bottom: 4rem;
 }
 
 .fulladecontactes {
@@ -1448,24 +1457,7 @@ figcaption {
 
 /************** INICIO CONTENIDO FLORS **************/
 
-.main__flors {
-    margin-top: 3.2rem;
-}
 
-.section__flors__princip {
-    width: 100%;
-    min-height: 95vh;
-    background-color: forestgreen;
-    background-image: url(../assets/flors/flors_fons.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
 
 .wrapper__flors__princip__text {
     width: 30%;
@@ -1532,18 +1524,17 @@ figcaption {
 .flors__princip__moviment {
     width: 100%;
     /* background-color: yellow; */
-    margin-bottom: 5rem;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .wrapper__flors__princip__img {
-    width: 3rem;
+    width: 2rem;
     animation: rotarflor 4s infinite linear;
 
     transition: transform .4s ease-in-out;
@@ -1574,12 +1565,13 @@ figcaption {
 }
 
 .wrapper__grid__flors {
-    width: 100%;
+    width: 95%;
     /* min-height: 100vh; */
     background-color: yellow;
+    margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
@@ -1588,14 +1580,11 @@ figcaption {
     background-color: goldenrod;
 }
 
-.wrapper__grid__flors__mobil {
-    display: none;
-}
+
 
 .wrapper__testimonis__text {
     width: 100%;
     min-height: 70vh;
-    background-color: #9546f5;
     padding: 2rem;
 
     display: flex;
@@ -1609,8 +1598,8 @@ figcaption {
     margin: 0 auto;
     text-align: center;
     /* background-color: fuchsia; */
-    color: #ffea9e;
-    font-size: 8.5vh;
+    color: #9546f5;
+    font-size: 6.5vh;
     font-weight: 900;
 }
 
@@ -1622,7 +1611,7 @@ figcaption {
 }
 
 .wrapper__grid__flors__paraules {
-    width: 70%;
+    width: 100%;
     /* background-color: #9bbaba; */
     margin: 0 auto;
 
@@ -1656,8 +1645,9 @@ figcaption {
 }
 
 .gif__fanzine {
-    width: 60%;
+    width: 90%;
     background-color: lime;
+    margin: 0 auto;
 }
 
 .iconoverd {
@@ -1679,16 +1669,7 @@ figcaption {
 
 @media (max-width: 900px) {
 
-    .section__flors__princip {
-        min-height: 100vh;
-        background-image: url(../assets/flors/flors_fons_s.webp);
-        background-position: center;
 
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
 
     .caja__h2__flors {
         margin-bottom: 2rem;
@@ -1711,13 +1692,7 @@ figcaption {
         flex-direction: row;
     }
 
-    .wrapper__grid__flors {
-        display: none;
-    }
 
-    .wrapper__grid__flors__mobil {
-        display: block;
-    }
 
     .wrapper__testimonis__text {
         min-height: 70vh;
@@ -1743,6 +1718,10 @@ figcaption {
     .wrapper__gif__fanzine {
 
         margin-top: 10rem;
+    }
+
+    .wrapper__grid__flors {
+        width: 100%;
     }
 }
 
@@ -1776,7 +1755,6 @@ figcaption {
 .proyectos__empuja {
     width: 100%;
     /* background-color: yellow; */
-    min-height: 100vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -1798,15 +1776,14 @@ figcaption {
 
 .logos__empuja {
     width: 100%;
-    min-height: 12.5rem;
-    /* background-color: rgba(192, 192, 112, 0.407); */
+    margin-bottom: 2rem;
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
-    gap: 1%;
+
 }
 
 .li__logos__empuja {
@@ -1841,9 +1818,7 @@ figcaption {
         min-height: 0;
     }
 
-    .proyectos__empuja {
-        min-height: 50vh;
-    }
+
 
     .contenedor__img__empuja {
         width: 90%;
@@ -1872,7 +1847,7 @@ figcaption {
 @media (max-width:700px) {
     .proyectos__festesmuro {
         grid-template-columns: repeat(1, 1fr);
-
+        padding: 1rem;
     }
 
 }
@@ -1905,6 +1880,7 @@ figcaption {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: .8rem;
     }
 
     .columna__uno__vinarock,
@@ -2036,6 +2012,7 @@ figcaption {
     grid-template-columns: repeat(3, 1fr);
     column-gap: .5rem;
     row-gap: 4rem;
+    padding: .5rem;
 }
 
 .piefoto__origen {
@@ -2240,7 +2217,7 @@ figcaption {
         color: black;
     }
 
-    .tabs__proyectos{
+    .tabs__proyectos {
         font-size: 1.2em;
     }
 
@@ -2313,7 +2290,7 @@ figcaption {
         margin-bottom: 0;
         margin-left: 0;
         margin: 0 auto !important;
-        font-size:1.1em ;
+        font-size: 1.1em;
     }
 
     .section__wrap__imgs {

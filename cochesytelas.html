@@ -76,17 +76,24 @@ Estructura:
 
     <main class="main__covers">
 
-        <a href="#arrow" class="main__arrow">
-            <img src="assets/arrow.png" alt="Arrow" loading="lazy">
+         <a href="#arrow" class="main__arrow" aria-label="Volver arriba">
+            <img src="assets/arrow.png" alt="" loading="lazy">
         </a>
 
-        <div class="wrap__grid">
-            <div class="section__wrap__izq coverscolor">
+        <div class="wrap__general">
 
-                <div class="wrap__izq__text coverscolor height__covers">
+            <div class="wrap__grid__projects">
 
-                    <h2 class="wrap__izq__h2 arab__cairo">السيارات والأقمشة</h2>
+                <div class="wrap__left__txt">
 
+                    <div class="wrap__flex__txt">
+                        <h2 class="h2__title">السيارات والأقمشة</h2>
+                        <h2 class="h2__title">Coches y telas</h2>
+                        <p class="left__date">2022</p>
+                        <p class="left">Egipte</p>
+                        <p class="left">Projecte personal</p>
+                        <p class="left__film">Digital</p>
+                    </div>
 
                     <!-- ************ INICIO TABS IDIOMAS ************ -->
 
@@ -94,20 +101,24 @@ Estructura:
 
                         <ul class="tabs__proyectos__ul">
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn isActive btn__covers">VAL</button>
+                                <button class="tabs__proyectos__btn isActive">VAL</button>
                             </li>
 
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn btn__covers">CAST</button>
+                                <button class="tabs__proyectos__btn">CAST</button>
                             </li>
 
                             <li class="tabs__proyectos__li">
-                                <button class="tabs__proyectos__btn btn__covers">ENG</button>
+                                <button class="tabs__proyectos__btn">ENG</button>
+                            </li>
+
+                            <li class="tabs__proyectos__li">
+                                <button class="tabs__proyectos__btn btn__covers">عربي</button>
                             </li>
                         </ul>
 
                         <div class="tabs__proyectos__wrapper">
-                            <p class="tabs__proyectos__p isActive tabs__p__covers">
+                            <p class="tabs__proyectos__p isActive">
                                 A la cultura popular, el cotxe sol associar-se a llibertat, presència i estatus. A
                                 moltes ciutats d'Egipte és habitual trobar-los coberts per protegir-los de la pols i del
                                 desgast quotidià. Cobrir alguna cosa passa de ser una acció quotidiana a un gest
@@ -120,7 +131,7 @@ Estructura:
                                 temps.
 
                             </p>
-                            <p class="tabs__proyectos__p tabs__p__covers">
+                            <p class="tabs__proyectos__p">
                                 En la cultura popular, el coche suele asociarse con libertad, presencia y estatus. En
                                 muchas ciudades de Egipto es habitual encontrarlos cubiertos para protegerlos del polvo
                                 y del desgaste cotidiano. Cubrir algo pasa de ser una acción cotidiana a un gesto
@@ -131,7 +142,7 @@ Estructura:
                                 que se cubre no desaparece: se desplaza. Sigue aquí, pero en otra condición, menos
                                 accesible y más ambigua frente al desgaste del entorno y del paso del tiempo.
                             </p>
-                            <p class="tabs__proyectos__p tabs__p__covers">
+                            <p class="tabs__proyectos__p">
                                 In popular culture, the car is often associated with freedom, presence, and status. In
                                 many cities in Egypt, it is common to find them covered to protect them from dust and
                                 everyday wear. Covering something shifts from being a routine action to a gesture
@@ -143,33 +154,35 @@ Estructura:
                                 another condition—less accessible and more ambiguous in the face of environmental wear
                                 and the passage of time.
                             </p>
+
+                            <p class="tabs__proyectos__p">
+                                 في الثقافة الشعبية، غالبًا ما ترتبط السيارة بالحرية, الحضور والمكانة. وفي كثير من مدن
+                                مصر، من المألوف أن نراها مغطّاة لحمايتها من الغبار ومن آثار الاستعمال اليومي. وهكذا
+                                تتحوّل عملية التغطية من فعلٍ عادي إلى رمز مشحون بالمعنى، يغير إدراك الشيء.
+                                <br><br>
+                                القماش يحمي، لكنه يحجب أيضًا؛ يحفظ، غير أنه يلغي هوية ما يستره. وتحت الغطاء يظلّ الشيء
+                                قائمًا، وإن كان حضوره يصبح غير يقيني. فما يُغطّى لا يختفي، بل يتحوّل موضعه؛ يظل حاضرًا،
+                                ولكن في حالة أخرى، أقلّ إتاحة وأكثر غموضًا في مواجهة تآكل المحيط ومرور الزمن.
+
+                            </p>
                         </div>
 
                     </div>
                     <!-- ************ FIN TABS IDIOMAS ************ -->
 
-                    <div class="wrap__datos tabs__p__covers">
-                        <p class="wrap__izq__tipo">Projecte personal</p>
-                        <p class="wrap__izq__fecha">Desembre 2022 - Egipte</p>
-
-                    </div>
                 </div>
 
-            </div>
-            <!-- ************ INICIO IMÁGENES ************ -->
-            <div id="arrow" class="section__wrap__imgs">
+                <section class="wrap__right__imgs">
 
-                <div class="proyectos">
-
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects" id="arrow">
                         <picture>
                             <source srcset="assets/covers/covers_01_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_01.webp" alt="Coche cubierto con tela en Egipto"
-                                title="Coches y telas" class="img__proyectos" loading="lazy">
+                                title="Coches y telas" class="img__proyectos">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_02_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_02.webp" alt="Coche cubierto con tela en Egipto"
@@ -177,7 +190,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_03_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_03.webp" alt="Coche cubierto con tela en Egipto"
@@ -185,7 +198,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_04_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_04.webp" alt="Coche cubierto con tela en Egipto"
@@ -193,16 +206,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_05_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_05.webp" alt="Coche cubierto con tela en Egipto"
                                 title="Coches y telas" class="img__proyectos" loading="lazy">
                         </picture>
-
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_06_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_06.webp" alt="Coche cubierto con tela en Egipto"
@@ -210,7 +222,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_07_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_07.webp" alt="Coche cubierto con tela en Egipto"
@@ -218,7 +230,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_08_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_08.webp" alt="Coche cubierto con tela en Egipto"
@@ -226,7 +238,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_09_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_09.webp" alt="Coche cubierto con tela en Egipto"
@@ -234,7 +246,7 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_10_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_10.webp" alt="Coche cubierto con tela en Egipto"
@@ -242,15 +254,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
-                            <source srcset="assets/covers/covers_11.webp" media="(max-width:1000px)">
+                            <source srcset="assets/covers/covers_11_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_11.webp" alt="Coche cubierto con tela en Egipto"
                                 title="Coches y telas" class="img__proyectos" loading="lazy">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_12_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_12.webp" alt="Coche cubierto con tela en Egipto"
@@ -258,23 +270,23 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
-                            <source srcset="assets/covers/covers_13.webp" media="(max-width:1000px)">
+                            <source srcset="assets/covers/covers_13_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_13.webp" alt="Coche cubierto con tela en Egipto"
                                 title="Coches y telas" class="img__proyectos" loading="lazy">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
-                        <picture>
+                    <div class="wrap__imgs__projects">
+                       <picture>
                             <source srcset="assets/covers/covers_14_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_14.webp" alt="Coche cubierto con tela en Egipto"
                                 title="Coches y telas" class="img__proyectos" loading="lazy">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_15_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_15.webp" alt="Coche cubierto con tela en Egipto"
@@ -282,15 +294,15 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
-                        <picture>
+                    <div class="wrap__imgs__projects">
+                       <picture>
                             <source srcset="assets/covers/covers_16_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_16.webp" alt="Coche cubierto con tela en Egipto"
                                 title="Coches y telas" class="img__proyectos" loading="lazy">
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_17_s.webp" media="(max-width:1000px)">
                             <img src="assets/covers/covers_17.webp" alt="Coche cubierto con tela en Egipto"
@@ -298,25 +310,25 @@ Estructura:
                         </picture>
                     </div>
 
-                    <div class="contenedor__img">
+                    <div class="wrap__imgs__projects">
                         <picture>
                             <source srcset="assets/covers/covers_18_s.webp" media="(max-width:1000px)">
-
                             <img src="assets/covers/covers_18.webp" alt="Coche cubierto con tela en Egipto"
                                 title="Coches y telas" class="img__proyectos" loading="lazy">
                         </picture>
-
                     </div>
-                    <!-- ************ FIN IMÁGENES ************ -->
+
                     <p class="p__siguiente">
                         <a href="egipte.html" title="Siguiente proyecto" target="_self"
                             class="siguiente__proyecto">Següent
                             projecte &#10142;</a>
                     </p>
-                </div>
+                </section>
 
             </div>
+
         </div>
+
     </main>
 
 </body>
@@ -324,4 +336,3 @@ Estructura:
 
 </html>
 
-</html>
