@@ -486,6 +486,11 @@ figcaption {
     color: rgb(202, 202, 202);
 }
 
+.idiomes__arab{
+        color: rgb(227, 226, 226);
+
+}
+
 .tabs__proyectos__sobremi {
     display: none;
 }
