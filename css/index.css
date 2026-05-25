@@ -25,6 +25,7 @@ a {
     display: block;
 }
 
+
 p a {
     display: inline;
 }
@@ -936,6 +937,10 @@ figcaption {
     border-radius: 1.25rem;
     transition: all 1s ease;
     /* color: white; */
+
+     color: inherit;
+    background-color: transparent;
+    border: none;
 }
 
 .tabs__proyectos__btn:hover {
